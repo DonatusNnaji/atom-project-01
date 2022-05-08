@@ -1,0 +1,139 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+body {
+ /*background-color: gold;*/
+  background-image: url('istockphoto-2.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+/*  display: flex;
+  flex-direction: row;
+  align-items: flex-start;*/
+}
+
+ /* navigation section*/
+ .navbar{
+   position: relative;
+   display: flex;
+   justify-content:space-between;
+  align-items: center;
+   background: rgba(0, 0, 0, 0.3);
+ }
+
+ #navList{
+   height: 100%;
+}
+
+#navList ul {
+    margin:0;
+    padding: 0px;
+   display: flex;
+ }
+
+ .list li {
+   list-style-type: none;
+   padding: 0 3rem;
+
+ }
+ .list li a{
+   font-family: cursive;
+   text-decoration: none;
+   color: white;
+   padding: 1rem;
+   display: block;
+
+ }
+.logo{
+  font-family: fantasy;
+   font-weight: bold;
+   font-size: 35px;
+   color: red;
+   margin-left: 10px;
+
+}
+.logo span{
+  color:white;
+}
+
+#navList li:hover {
+background-color: gray;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  width: 31px;
+  height: 21px;
+}
+
+.bar{
+  height: 3px;
+  width:100%;
+  background-color:white;
+}
+
+@media screen and (max-width: 600px) {
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#navList{
+  display: none;
+ width: 100%;
+  transition: All 0.5s;
+}
+
+
+#navList ul {
+  flex-direction: column;
+  width: 100%;
+}
+#navList ul  li {
+  /*border-bottom: 1px solid gray;*/
+  text-align: center;
+}
+#navList li a{
+ padding: 1rem;
+}
+
+#navList.active {
+  display: flex;
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/*.bar{
+  height: 3px;
+  width:100%;
+  background-color:white;
+}*/
+/*.toggle-btn:hover{
+  color:blue;
+}*/
+/*.bar-1{
+  border-radius: 5px;
+  transform:rotateZ(45deg);
+  transition: All 2s;
+}
+.bar-2{
+display: none;
+}
+.bar-3{
+border-radius: 5px;
+transform: rotateZ(-45deg);
+transition: All 2s;
+}
+}
+*/
