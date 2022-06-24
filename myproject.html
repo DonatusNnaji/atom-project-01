@@ -10,41 +10,93 @@
     <title> my portfolio site</title>
   </head>
   <body>
-    <header>
       <!--navigation bar section-->
+  <!--  <div class="  navigation">-->
+
+    <header>
        <nav class ="navbar">
          <div class="logo"><span>nat</span>us</div>
 
-         <div id="hamburgerBar"  >
-           <a href="#" class ="hamburger">
-             <span class="bar"></span>
-             <span class="bar"></span>
-             <span class="bar"></span>
-          </a>
+         <div  class= "hamburger" id="hamburgerBar"  >
+             <span class=" line1"></span>
+             <span class=" line2"></span>
+             <span class=" line3"></span>
         </div>
-        
-         <div id="navList">
+
+         <div  class=" navList" id="navList">
            <ul class="list" id="nav">
-             <li> <a href="#">HOME</a></li>
-             <li> <a href="#">FEATURES</a></li>
-             <li> <a href="#">ABOUT</a></li>
-             <li> <a href="#"> CONTACT</a></li>
+             <li> <a href="#" class="active_nav">HOME</a></li>
+             <li> <a href="#" class="">FEATURES</a></li>
+             <li> <a href="#" class="">ABOUT</a></li>
+             <li> <a href="#" class=""> CONTACT</a></li>
            </ul>
          </div>
 
-
+      </nav>
     </header>
-        <!--main section -->
-    <main>
 
-    .<div class="home">
+    <main class=" wrapper home activePage  "  id="home">
+    <div class="maincontent">
+    <div class="homeleft">
        <h2>Hi,<br> I am <span>Donatus Nnaji</span> </h2>
        <p> A frontend Software developer</p>
        <p> I simplify task using code and programming language</p>
+        <button type="buttonCV" name="buttonCV">Download CV</button>
+    </div>
 
+    <div class="photo">
+      <img src="portfolio_img1.png"  class="myphoto" alt="myphoto">
+    </div>
     </div>
    </main>
+  </div>
+
+  <!--about section-->
+ <section class= "wrapper   "  id = "about">
+   <div class= "about">
+     <h2>ABOUT ME </h2>
+     <p> </p>
+   </div>
+ </section>
+
+    <!--features section-->
+  <section  class= "wrapper   " id = "features" >
+    <div class= "features">
+      <h2>MY <span> PORTFOLIO</span></h2>
+      <p> Some project i have completed , using various programming language
+        and skills
+      </p>
+      <div class= "project-one">
+
+      </div>
+      <div class= "project-two">
+
+      </div>
+      <div class= "project-three">
+
+      </div>
+    </div>
+  </section>
+
+
+  <!--contact section -->
+
+  <section  class= "wrapper  "  id = "contact" >
+    <div class= "contact">
+      <div class= "contactIntro">
+        <h1>MY CONTACT</h1>
+        <p> If you wish to know more about me and my work, feel free to reach me through my email .</p>
+
+      </div>
+      <div>
+
+      </div>
+
+     </div>
+
+  </section>
+
     <footer class="footer"> </footer>
-  <script type="text/javascript" src="myproject.js"> </script>
+  <script type= "text/javascript" src= "myproject.js"> </script>
   </body>
 </html>
